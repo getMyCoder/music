@@ -1,0 +1,335 @@
+
+body{margin: 0;padding: 0;
+}
+#app {
+   font-family: 'Avenir,\5FAE\8F6F\96C5\9ED1', Helvetica, Arial, sans-serif;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+h1,h2,h3,h4,h5,h6,ul,li,dl,dt,dd,ol,p,span{list-style: none;margin: 0;padding: 0;
+}
+a:hover{text-decoration: none
+}
+a:active{text-decoration: none
+}
+a:link{text-decoration: none
+}
+
+.showMode{margin-top: 80px;overflow-y: auto
+}
+.home{margin: 0; position: relative;width: 100%;overflow: hidden;
+}
+.top{ width: 100%;height: 80px;overflow: hidden;position: fixed;top: 0;left: 0;z-index: 999;
+}
+.top img{
+}
+.top h2{margin: 0 0 0 12px;height: 40px;float: left;
+}
+.top h2 img{height: 14px; margin-top: 13px;
+}
+.top h3{margin: 0 12px 0 0;height: 40px;float: right;
+}
+.top h3 img{ height: 20px;margin-top: 10px;
+}
+.musicMenu{width: 100%;height: 40px;border-top: 1px solid #f1f1f1;overflow: hidden;
+}
+.musicMenu h4{float: left;width: 33.3%;height: 40px;line-height: 40px;text-align: center;color: #fff;font-weight: normal;border-left:1px solid #f1f1f1;-webkit-box-sizing: border-box;box-sizing: border-box;position: relative;
+}
+.musicMenu h4:first-child{border-left: none;
+}
+.musicMenu h4 p span{ display: inline-block; height: 15px;width: 8px; padding-left: 5px;
+}
+.musicMenu h4 p span i{ display: block;width: 8px;height: 8px;background: #fff;border-radius: 50%;
+}
+.musicMenu h4 p{color: #fff;font-size: 14px;
+}
+.leftMenu{width: 100%;position: fixed;top: 0;left: 0;z-index: 0;
+}
+.leftMenuActive{background: rgba(0,0,0,0.5);z-index: 9999 !important;
+}
+.user{width: 100%;overflow: hidden;background: url(../../static/img/img6.jpg) no-repeat;background-size: cover
+}
+.user-bg{background: rgba(0,0,0,0.5);width: 100%;height: inherit;padding-top: 30px;
+}
+.user p{width: 80px;height: 80px;margin: 0 auto;border-radius: 50%;overflow: hidden;
+}
+.user p img{width: 80px;height: 80px;
+}
+.user h2{font-size: 16px;color: #fff;font-weight: normal;text-align: center;line-height: 2em;padding: 15px 0 0 0;
+}
+.user h3{font-size: 12px;color: #fff;font-weight: normal; line-height: 2em;padding: 5px 15px 15px 15px ;
+}
+.leftMain{width: 80%;background: #fff;position: absolute;
+}
+.user-main{padding: 15px;
+}
+.user-main p{width: 100%;text-align: center;font-size: 14px;color: #666;border-bottom: 1px solid #f1f1f1;line-height: 50px;
+}
+.user-Pop{background: rgba(0,0,0,0.5);position: fixed;z-index: 999999;top: 0;left: 0;width: 100%;
+}
+.Pop-main{width: 90%;background: #F1F1F1;height: 85%;margin: 10% 5%;position: relative;
+}
+.close{position: absolute;width: 22px;height: 22px;right: -11px;top: -11px;background: #fff;border-radius: 50%;z-index: 9999;
+}
+.close img{width: 22px;height: 22px;
+}
+.setcount{width: 100%;height: 100%;overflow: auto;
+}
+input,textarea{outline: none;
+}
+.search{width: 100%;z-index: 9999;background: #fff;position: absolute;top: 0;left: 0;
+}
+.search-main{width: 100%;overflow: hidden;height: 60px;
+}
+.search-back{float: left;width: 10%;margin: 14px 0 0 0;text-align: center
+}
+.search-back img{width: 18px
+}
+.search-top{text-align: center;float: left;width: 76%;margin: 15px 0 0 2%;
+}
+.search-input{width: 100%;background: none;border:1px solid #fff;border-width: 0 0 1px 0; width: 100% ;height: 20px;line-height: 20px;color: #fff;
+}
+.search-start{float: right; margin: 0 12px 0 0;text-align: center
+}
+.search-start img{height: 20px;margin-top: 10px;
+}
+.showplay{width: 100%;height: 40px; position: fixed;z-index: 999;bottom: 0;left: 0;
+}
+.tit-right{width: 30px;height: 30px;border-radius: 50%;overflow: hidden;margin: 5px;float: left;
+}
+.tit-right img{width: 30px;height: 30px;
+}
+.tit-left{color: #fff;float: left;margin-left: 8px;
+}
+.tit-left h2{font-weight: normal;line-height: 20px;font-size:0.8em;padding-top: 3px;
+}
+.tit-left p{ font-size: 0.7em;line-height: 15px;
+}
+.musicInfor{width: 100%;position: fixed;top: 0;left: 0;background: url(../../static/img/homeBg.jpg) no-repeat top center;background-size:100% 100%;z-index: 99999;
+}
+.music-back{background: #000;float: left;width: 100%; height: 40px;
+}
+.music-back p{width: 10%;float: left;
+}
+.music-back img{width: 18px;margin: 11px 8px;float: left;
+}
+.music-back span{display: block;color: #fff;float: left;line-height: 40px;font-size: 16px;width: 80%;text-align: center
+}
+
+.set{width: 100%;margin: 0 auto;
+}
+.set-con ul{background: #fff;
+}
+.set-con ul li{overflow: hidden;line-height: 40px;border-top: 1px solid #f1f1f1;
+}
+.set-con ul li h4{font-weight: normal;font-size: 12px;color: #666;float: left;padding-left: 8px;
+}
+.set-con ul li span{float: right;display: block;position: relative;background: #ccc;width: 26px;height:12px;border-radius: 6px;margin:7px 8px 0 0;
+}
+.set-con ul li span i{display: block;position: absolute;top: -2px;left: -2px;background: #000;width: 16px;height: 16px;border-radius: 50%;
+}
+.bgColor{background: #454545 !important;
+}
+.h3-set{width: 100%;line-height: 50px;text-align: center;color: #666;font-weight: normal;font-size: 16px;background: #fff;
+}
+
+.person{width: 100%;height: 100%;
+}
+.person-con{padding-top: 15px;overflow: auto
+}
+.head-img{width: 100px;height: 100px;margin: 0 auto;border-radius: 50%;overflow: hidden;position: relative;
+}
+.head-img img{width: 100px;height: 100px;
+}
+.headU{width: 100%;margin-top: 15px;
+}
+.nameU{font-size: 16px; line-height: 40px;color: #60a1d4;padding: 0 15px;text-align: center;
+}
+.nameC{font-size: 12px;color: #666;line-height: 20px;padding: 0 15px; height: 40px;overflow: hidden;text-indent: 20px
+}
+.person-title{width: 100%;line-height: 50px;text-align: center;color: #666;font-weight: normal;font-size: 16px;
+}
+.inputImg{position: absolute;top: 0;left: 0;width: 100px;height: 100px;opacity: 0;filter: alpha(opacity=0)
+}
+.Label{margin-top: 10px;padding-bottom: 20px;
+}
+.Label h4{text-align: center;line-height: 35px;color: #666;font-weight: normal; margin-bottom: 15px;
+}
+.label-span{width: 90%;overflow: hidden;text-align: center;padding: 0 15px;
+}
+.label-span span{font-size: 12px;padding: 3px 10px; margin: 5px 4px;display: block;float: left;border-radius: 3px;color: #60a1d4;border:1px solid #60a1d4;background: #fff;
+}
+.label-span span:hover{border:1px solid #fff;background: #60a1d4;color: #fff;
+}
+.getName{position: absolute;top: 0;left: 0;width: 100%; background: rgba(0,0,0,0.5);padding-top: 30px;
+}
+.getName textarea{width: 90%;height: 100px;text-indent: 20px;border:1px solid #ccc;margin: 0 0 0 4.5%;
+}
+.getName input{width: 91.5%;height: 30px;text-indent: 20px;border:1px solid #ccc;margin: 0 0 0 4.5%;
+}
+.btn{width: 80%; text-align: center;margin: 10px auto 0;
+}
+.btn button{width:70px;height:30px;border:none; border-radius: 3px;margin: 0 8px;
+}
+.btn-yes{background: #329bec;color: #fff;
+}
+.btn-no{background: #ccc;color: #666;
+}
+
+.them{width: 100%;
+}
+.them-con{width: 100%;
+}
+.them-h4{width: 100%;line-height: 50px;text-align: center;color: #666;font-weight: normal;font-size: 16px;
+}
+.them-main{
+}
+.them-main ul{overflow: hidden;
+}
+.them-main ul li{width: 30%;float: left;margin:10px 0 0 2.5%;
+}
+.them-main ul li img{width: 90%;border-radius: 3px;margin-left: 5%;
+}
+.them-main ul li p{color: #666;text-align: center;font-size: 12px;line-height: 25px;position: relative;
+}
+.them-main ul li p span{position: absolute;right: 5%;top: 0;display: block; width: 15px;height: 15px;
+}
+.them-main ul li p span{width: 15px;height: 15px;
+}
+
+.friends-con{width: 100%;
+}
+.friends-main{ padding: 15px 8px;
+}
+.friends-main ul{
+}
+.friends-main ul li{border:1px solid #dbdbdb;height: 83px;overflow: hidden;width: 100%;margin: 8px 0 0 0 ;
+}
+.friends-main ul li p{font-size: 12px;color: #666;padding: 0 8px;line-height: 18px;
+}
+.friends-h{overflow: hidden;padding: 8px;
+}
+.friends-h h2{float: left;width: 30px;height: 30px;border-radius: 50%;overflow: hidden;
+}
+.friends-h h2 img{ width: 30px;height: 30px;
+}
+.friends-h h3{ float: left;margin-left: 15px; font-size: 14px;color: #60a1d4;line-height: 30px;
+}
+
+.musicDetails{background: rgba(65,77,127,0.5);width: 100%;padding: 40px 0 0 0;overflow: hidden;position: relative;z-index: 999;
+}
+.musicTitle{width: 100%;
+}
+.mT1{width: 200px;height: 200px;background: rgba(255,255,255,0.6);margin:50px auto;border-radius: 50%;overflow: hidden;
+}
+.mT2{width: 190px;height: 190px;margin: 5px auto;border-radius: 50%;overflow: hidden;background: #000;
+}
+.mT3{width: 150px;height: 150px;margin: 20px auto;overflow: hidden;border-radius: 50%;
+}
+.mT3 img{width: 150px;height: 150px;
+}
+.musicDown{position: absolute;bottom: 0;left: 0;width: 100%; height: 180px;
+}
+.Mprogress{width: 90%;margin: 0 auto;overflow: hidden;height: 10px;position: relative;
+}
+.Mprogress h2{height:2px;width: 100%;margin-top: 4px;background: #ccc;border-radius: 1px;overflow: hidden;
+}
+.Mprogress h3{height:2px;background: red; width: 0;
+}
+.Mprogress p{height: 2px;width: 2px;position: absolute;border-radius: 50%;background: red;border: 4px solid #fff;top: 0;left: 0;
+}
+.musicControl{width: 100%;margin-top: 30px;
+}
+.mCL{width: 28%;float: left;text-align: right
+}
+.mCL img{width: 35px;height: 35px;margin-top: 5px;
+}
+.mCM{width: 44%;float: left;text-align: center
+}
+.mCM img{width: 45px;height: 45px;
+}
+.mCR{width: 28%;float: left;text-align: left
+}
+.mCR img{width: 35px;height: 35px;margin-top: 5px;
+}
+
+.mode{width: 100%;position: relative;z-index: 99;
+}
+.mode ul{overflow: hidden;
+}
+.mode ul li{float: left;width: 30%;margin: 5px 0 0 2.5%;text-align: center;
+}
+.mode ul li p{ border-radius: 3px;overflow: hidden;width: 100%;text-align: center;border:1px solid #f1f1f1;height: 100px;background-size: 100% 100%
+}
+.mode ul li p span{display: block ;width: 100%;height: inherit;background: rgba(255,255,255,0.4);
+}
+.mode ul li p img{width: 70%;vertical-align: middle;margin-top: 1em;
+}
+.mode ul li h2{font-size: 14px;color: #0b2e13;font-weight: normal;line-height: 2em;
+}
+.myMusic{width: 100%;line-height: 40px;text-align: center;color: #666;font-weight: normal;font-size: 16px;
+}
+
+
+.banner{width: 100%;height: 140px; overflow: hidden;
+}
+.banner-main{position: relative;width: 100%;height: inherit;
+}
+.moveB{height: 400px;list-style: none;position: absolute;top: 0;left: 0;z-index: 9;
+}
+.moveB li{float: left;height: 140px;overflow: hidden;
+}
+.moveB li img{width: 100%;height: 140px;
+}
+.moveS{position: absolute;z-index: 999;bottom: 0;list-style: none;width: 100%;height:4px;
+}
+.moveS li{height: inherit;float: left;background: rgba(0,0,0,0.5);
+}
+.moveS li p{height: inherit;background:#fff;width: 0;
+}
+
+.mode3{width: 100%; position: relative;z-index: 99;
+}
+.mode3-con{width: 100%;
+}
+.mode3-con ul{margin-top: 5px;
+}
+.mode3-con ul li{overflow: hidden;border-bottom: 1px solid #f1f1f5;padding: 8px 10px; height: 50px;
+}
+.mode3-con h2{float: left;width: 40px;height: 40px;overflow: hidden;border-radius: 10px;margin-top: 5px;
+}
+.mode3-con h2 img{width: 40px;height: 40px;
+}
+.mode3-con h3{float: left;font-weight: normal;padding-left: 10px;
+}
+.mode3-con h3 span{font-size: 14px;color: #666;
+}
+.mode3-con h3 p{font-size: 12px;color: #999;margin-top: 8px;
+}
+.mode3-con h4{float: right;width: 15px;margin-top: 30px;
+}
+.mode3-con h4 img{width: 3px;
+}
+.think{margin: 10px 0 0 10px; line-height: 2.5em;font-size: 16px;
+}
+.mode3-pop{width: 100%;position: fixed;top: 0;left: 0;background: rgba(0,0,0,0.5);z-index: 99999;
+}
+.mode3-popcon{width: 100%;background: #fff;position: absolute;left: 0;bottom: 0;  -webkit-border-top-left-radius:10px;-webkit-border-top-right-radius:10px;height: 300px;display: none;overflow-y: auto;
+}
+.mode3-popcon p{width: 90%;margin: 0 auto;border-bottom: 1px solid #f1f1f1;font-size: 14px;color: #666;line-height: 32px;padding: 5px;
+}
+
+.mode2{width: 100%; position: relative;z-index: 99;
+}
+.mode2 ul{
+}
+.mode2 ul li{width: 96%;margin: 5px 2% 10px 2%;border:1px solid #e0dede;padding: 10px 0 5px 0;
+}
+.mode2 ul li h2{width: 96%;margin: 0 2%;height: 3em;overflow: hidden;
+}
+.mode2 ul li h2 img{width: 100%;
+}
+.mode2 ul li p{ font-size: 12px;line-height: 1.5em;color: #333;padding: 5px 10px;
+}
+.think{margin: 10px 0 0 10px; line-height: 2.5em;font-size: 16px;
+}
